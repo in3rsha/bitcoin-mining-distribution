@@ -84,13 +84,13 @@ It then compares the data inside each block against a list of [`known_miners.jso
 
 ### How can you identify who mined a block?
 
-When a bitcoin miner constructs a block, they place a special transaction at the top of the block called a **coinbase transaction**. This transaction is special because it allows a miner to send themselves a fixed amount of bitcoins that did not already exist (called the _block reward_).
+When a bitcoin miner constructs a block, they place a special transaction at the top of the block called a [**coinbase transaction**](https://learnmeabitcoin.com/glossary/coinbase-transaction). This transaction is special because it allows a miner to send themselves a fixed amount of bitcoins that did not already exist (called the _block reward_).
 
 However, whereas in a typical transaction you _have to select and unlock_ some existing bitcoins, this does not happen a coinbase transaction. As a result, every coinbase transaction has some "redundant" space where the "`unlocking code`" for existing bitcoins would have normally gone.
 
 ![](images/coinbase.png)
 
-This free space is called the "coinbase", and miners can put up to 100 bytes[^1] of any data they like in to it. For example, Satoshi put the following in to the coinbase of the first block[^2]:
+This free space is called the "coinbase", and miners can put up to `100 bytes` of any data they like in to it. For example, Satoshi put the following in to the coinbase of the first block:
 
 ```
 The Times 03/Jan/2009 Chancellor on brink of second bailout for banks

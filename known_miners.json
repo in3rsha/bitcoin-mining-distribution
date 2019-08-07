@@ -1,0 +1,212 @@
+{
+    "F2Pool": {
+        "coinbase_hex": ["e4b883e5bda9e7a59ee4bb99e9b1bc"],
+        "address": ["1KFHE7w8BhaENAswwryaoccDb6qcT6DbYY"],
+        "notes": "Another coinbase is 'fabe6d6d' in hex (🐟) and 'Mined by' in ascii, but I think the address covers these coinbase signatures."
+    },
+    "Slush": {
+        "coinbase": ["slush"]
+    },
+    "AntPool": {
+        "coinbase": ["AntPool"]
+    },
+    "poolin.com": {
+        "coinbase": ["poolin.com"]
+    },
+    "BTC.COM": {
+        "coinbase": ["BTC.COM"]
+    },
+    "ViaBTC": {
+        "coinbase": ["ViaBTC", "viabtc.com"]
+    },
+    "Bitfury": {
+        "coinbase": ["Bitfury", "BitFury"]
+    },
+    "BTC.TOP": {
+        "coinbase": ["BTC.TOP"]
+    },
+    "Huobi": {
+        "coinbase": ["HuoBi", "Huobi"]
+    },
+    "okpool": {
+        "coinbase": ["okpool.top"]
+    },
+    "Bixin": {
+        "coinbase": ["Bixin"]
+    },
+    "BitClub": {
+        "coinbase": ["BitClub", "BitClub Network"]
+    },
+    "Bitcoin.com": {
+        "coinbase": ["pool.bitcoin.com"]
+    },
+    "KanoPool": {
+        "coinbase": ["KanoPool"]
+    },
+    "HummerPool": {
+        "coinbase": ["HummerPool", "Hummerpool"]
+    },
+    "BTC Guild": {
+        "coinbase": ["BTC Guild"]
+    },
+    "BitMinter": {
+        "coinbase": ["BitMinter"]
+    },
+    "GHash.IO": {
+        "coinbase": ["GHash.IO", "ghash.io"]
+    },
+    "50BTC.com": {
+        "coinbase": ["50BTC.com"]
+    },
+    "ASICMiner": {
+        "coinbase": ["ASICMiner"]
+    },
+    "Eligius": {
+        "coinbase": ["Eligius"]
+    },
+    "ozcoin": {
+        "coinbase": ["ozcoin", "ozco.in"]
+    },
+    "HaoBTC": {
+        "coinbase": ["HaoBTC"]
+    },
+    "GBMiners": {
+        "coinbase": ["mined by gbminers"]
+    },
+    "1Hash": {
+        "coinbase": ["1hash.com"]
+    },
+    "BW Pool": {
+        "coinbase": ["BW Pool", "BWPool"]
+    },
+    "BTCC": {
+        "coinbase": ["BTCC"]
+    },
+    "Go Green": {
+        "coinbase": ["GBSB3P1"]
+    },
+    "Batpool": {
+        "coinbase": ["BATPOOL"]
+    },
+    "EclipseMC": {
+        "coinbase": ["EclipseMC", "EMC"]
+    },
+    "XBTC": {
+        "coinbase": ["xbtc.exx.com&bw.com"]
+    },
+    "KnCMiner": {
+        "coinbase": ["KnCMiner"]
+    },
+    "TangPool": {
+        "coinbase": ["TangPool", "Tangpool"]
+    },
+    "ckpool": {
+        "coinbase": ["ckpool"]
+    },
+    "megabigpower.com": {
+        "coinbase": ["megabigpower.com"]
+    },
+    "Polmine": {
+        "coinbase": ["by polmine.pl"]
+    },
+    "BitcoinAffiliateNetwork": {
+        "coinbase": ["mining.bitcoinaffiliatenetwork.com"]
+    },
+    "Bravo Mining": {
+        "coinbase": ["bravo-mining"]
+    },
+    "BCMonster": {
+        "coinbase": ["BCMonster"]
+    },
+    "Bitcoin-India": {
+        "coinbase": ["Bitcoin-India"]
+    },
+    "ConnectBTC": {
+        "coinbase": ["ConnectBTC"]
+    },
+    "Phash.IO": {
+        "coinbase": ["phash.io"]
+    },
+    "Phash.CN": {
+        "coinbase": ["phash.cn"]
+    },
+    "MMPool": {
+        "coinbase": ["mmpool", "mkalinin.ru"]
+    },
+    "nmcbit.com": {
+        "coinbase": ["nmcbit.com"]
+    },
+    "Triplemining.com": {
+        "coinbase": ["Triplemining.com", "triplemining"]
+    },
+    "bitclockers": {
+        "coinbase": ["bitclockers"]
+    },
+    "mmBitLC": {
+        "coinbase": ["mmBitLC", "BitLC"]
+    },
+    "tigerpool.net": {
+        "coinbase": ["tigerpool.net"]
+    },
+    "SockThing": {
+        "coinbase": ["SockThing", "SOCK"]
+    },
+    "CoinLab": {
+        "coinbase": ["CoinLab"]
+    },
+    "Pierce and Paul": {
+        "coinbase": ["For Pierce and Paul"]
+    },
+    "Alydian": {
+        "coinbase": ["Alydian"],
+        "notes": "Alydian53350635211049"
+    },
+    "MaxBTC": {
+        "coinbase": ["MaxBTC"]
+    },
+    "DigitalBTC": {
+        "coinbase": ["agentD"]
+    },
+    "BTPOOL": {
+        "coinbase": ["BTPOOL"]
+    },
+    "Canoe": {
+        "coinbase": ["CANOE", "canoepool"]
+    },
+    "DCEX": {
+        "coinbase": ["DCEX"]
+    },
+    "DPOOL.TOP": {
+        "coinbase": ["DPOOL.TOP"]
+    },
+    "58coin.com": {
+        "coinbase": ["58coin.com"]
+    },
+    "Bitcoin-Russia": {
+        "coinbase": ["Bitcoin-Russia.ru"]
+    },
+    "Helix": {
+        "coinbase": ["Helix"]
+    },
+    "Sigmapool": {
+        "coinbase": ["SigmaPool.com"]
+    },
+    "BITFARMS": {
+        "coinbase": ["BITFARMS"]
+    },
+    "SecretSuperstar": {
+        "coinbase": ["SecretSuperstar"]
+    },
+    "Rawpool.com": {
+        "coinbase": ["Rawpool.com"]
+    },
+    "poolserverj": {
+        "coinbase": ["poolserverj"]
+    },
+    "8baochi.com": {
+        "coinbase": ["8baochi.com"]
+    },
+    "Unknown": {
+        "notes": "Just a spare field, comes in handy in some scripts."
+    }
+}

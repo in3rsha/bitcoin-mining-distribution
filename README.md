@@ -133,6 +133,18 @@ However, if a single miner has the ability to mine more blocks than the rest of 
 
 Now, as bad as this sounds it isn't necessarily the end of the world, because the incentive to continue to build upon the longest chain and claim block rewards is probably greater than the benefit of "undoing" a transaction (not to mention the effect it would have on the current value of bitcoin). Nonetheless, the risk would still be there, which is why it's preferable that we see that no single miner is mining more than 50% of blocks at any given time.
 
+## FAQ
+
+### What do the colors mean?
+
+Nothing at all. I just gave each miner a random color (by hashing their name and taking the last six characters as a hex color value). If two miners have a similar color it's just a coincidence.
+
+### How reliably have you identified who mined each block?
+
+Not 100% reliably, because a miner can put whatever data they like in the coinbase field. For example, they could remain somewhat anonymous by not putting any text in there at all, or they could put in the name of a completely _different_ miner (if they wanted to).
+
+With this tool I'm just working with whatever data has been put in to the coinbase, so it's not an exact science.
+
 ## Links
 
 I identified each miner's unique coinbase signatures by browsing through the coinbase transactions manually, which was great fun. These resources were also helpful:

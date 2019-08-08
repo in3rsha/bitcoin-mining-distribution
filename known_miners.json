@@ -53,7 +53,9 @@
         "coinbase": ["BitMinter"]
     },
     "GHash.IO": {
-        "coinbase": ["GHash.IO", "ghash.io"]
+        "coinbase": ["GHash.IO", "ghash.io"],
+        "address": ["1CjPR7Z5ZSyWk6WtXvSFgkptmpoi4UM9BC"],
+        "notes": "Doesn't always put 'GHash' in the coinbase. Need address to identify most blocks."
     },
     "50BTC.com": {
         "coinbase": ["50BTC.com"]

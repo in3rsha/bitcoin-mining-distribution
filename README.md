@@ -111,6 +111,8 @@ Here are some more examples:
 416236 [...]Sun Chun Yu: Zhuang Yuan, will you marry me?[...]
 ```
 
+_**NOTE:** Sometimes you need to look at the **destination address** in the coinbase transaction to identify a miner. For example, GHash.IO used the address `1CjPR7Z5ZSyWk6WtXvSFgkptmpoi4UM9BC` to collect the block reward, but did not always put their name inside the coinbase._
+
 ## Why are these charts interesting?
 
 Because if someone is mining 51% or more of blocks, they have the ability to "undo" transactions that have been written to the blockchain.

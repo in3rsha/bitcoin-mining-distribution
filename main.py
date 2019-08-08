@@ -89,7 +89,7 @@ with open('data/all.csv') as f:
 
         # Identify the miner
         name = identify(miners, ascii, scriptsig, address)
-        #print height, ascii # Check out the Unknown miners as we go to see if we've missed any
+        #print height, name, ascii # Check out the miners as we go to see if we've missed any
 
         # Add to counters
         miners[name]["count_period"] += 1 # If we've found a match, add to the counter for that miner

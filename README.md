@@ -2,6 +2,8 @@
 
 This code allows you to identify who mined the blocks in your blockchain, and plot pie charts so that you can see the **most dominant miners over the history of Bitcoin**.
 
+**EXAMPLE: <https://twitter.com/in3rsha/status/1159468260661895169>**
+
 ![](images/example_chart.png)
 
 In other words, this tool shows you how close miners have come to controlling 51% or more of the blocks in any given 2-week period.
@@ -86,7 +88,7 @@ It then compares the data inside each block against a list of [`known_miners.jso
 
 When a bitcoin miner constructs a block, they place a special transaction at the top of the block called a [**coinbase transaction**](https://learnmeabitcoin.com/glossary/coinbase-transaction). This transaction is special because it allows a miner to send themselves a fixed amount of bitcoins that did not already exist (called the _block reward_).
 
-However, whereas in a typical transaction you _have to select and unlock_ some existing bitcoins, this does not happen a coinbase transaction. As a result, every coinbase transaction has some "redundant" space where the "`unlocking code`" for existing bitcoins would have normally gone.
+However, whereas in a typical transaction you _have to select and unlock_ some existing bitcoins, this does not happen in a coinbase transaction. As a result, every coinbase transaction has some "redundant" space where the "`unlocking code`" for existing bitcoins would have normally gone.
 
 ![](images/coinbase.png)
 
@@ -137,13 +139,23 @@ Now, as bad as this sounds it isn't necessarily the end of the world, because th
 
 ### What do the colors mean?
 
-Nothing at all. I just gave each miner a random color (by hashing their name and taking the last six characters as a hex color value). If two miners have a similar color it's just a coincidence.
+Nothing at all. I just gave each miner a random color (by hashing their name and taking the last six characters as a hex color value).
+
+It's just a coincidence if two miners are a similar color.
 
 ### How reliably have you identified who mined each block?
 
-Not 100% reliably, because a miner can put whatever data they like in the coinbase field. For example, they could remain somewhat anonymous by not putting any text in there at all, or they could put in the name of a completely _different_ miner (if they wanted to).
+Not 100% reliably, because miners can put whatever data they like in the coinbase field.
+
+For example, a miner could remain somewhat anonymous by not putting any text in there at all, or they could put in the name of a completely _different_ miner (if they wanted to).
 
 With this tool I'm just working with whatever data has been put in to the coinbase, so it's not an exact science.
+
+## Wasn't slushpool the first mining pool?
+
+Yes, but they [didn't mark their blocks at the start](https://twitter.com/slush/status/1159700373701050368).
+
+This tool only looks in the coinbase field to identify miners, which is why _Eligius_ shows up as the first mining pool instead.
 
 ## Links
 

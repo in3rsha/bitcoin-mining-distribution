@@ -76,7 +76,7 @@ After running each of these scripts you will have:
 2. `charts/*.png` - Individual pie charts for every difficulty period (roughly 2 week intervals)
 3. `mining-distribution.gif` - An animated gif of the entire mining distribution history.
 
-_**NOTE:** The individual pie charts of mining distribution are created for the blocks mined during a **target adjustment period** (every 2016 blocks). When the [target](https://learnmeabitcoin.com/glossary/target) adjusts, the counters are reset._
+_**NOTE:** The individual pie charts of mining distribution are created for the blocks mined during a **target adjustment period** (every 2016 blocks). When the [target](https://learnmeabitcoin.com/guide/target) adjusts, the counters are reset._
 
 ## How does this work?
 
@@ -86,7 +86,7 @@ It then compares the data inside each block against a list of [`known_miners.jso
 
 ### How can you identify who mined a block?
 
-When a bitcoin miner constructs a block, they place a special transaction at the top of the block called a [**coinbase transaction**](https://learnmeabitcoin.com/glossary/coinbase-transaction). This transaction is special because it allows a miner to send themselves a fixed amount of bitcoins that did not already exist (called the _block reward_).
+When a bitcoin miner constructs a block, they place a special transaction at the top of the block called a [**coinbase transaction**](https://learnmeabitcoin.com/guide/coinbase-transaction). This transaction is special because it allows a miner to send themselves a fixed amount of bitcoins that did not already exist (called the _block reward_).
 
 However, whereas in a typical transaction you _have to select and unlock_ some existing bitcoins, this does not happen in a coinbase transaction. As a result, every coinbase transaction has some "redundant" space where the "`unlocking code`" for existing bitcoins would have normally gone.
 
@@ -168,12 +168,12 @@ I identified each miner's unique coinbase signatures by browsing through the coi
 
 If you're interested in checking out coinbase messages, I display them at the top of each block in my blockchain explorer:
 
-* [Genesis Block](https://learnmeabitcoin.com/browser/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f)
+* [Genesis Block](https://learnmeabitcoin.com/explorer/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f)
 
 Here's some further information on coinbase transactions and mining:
 
-* [learnmeabitcoin.com - Coinbase Transaction](https://learnmeabitcoin.com/glossary/coinbase-transaction)
-* [learnmeabitcoin.com - Target](https://learnmeabitcoin.com/glossary/target)
+* [learnmeabitcoin.com - Coinbase Transaction](https://learnmeabitcoin.com/guide/coinbase-transaction)
+* [learnmeabitcoin.com - Target](https://learnmeabitcoin.com/guide/target)
 
 And some other interesting links:
 

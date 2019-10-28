@@ -23,7 +23,7 @@ bitcoin-iterate -q --transaction=%tN,%tX | grep "^0," | cut -d "," -f 2 > data/t
 
 # 3. Decode the coinbase transactions to get the input scriptsig and first output address (65 mins - 80MB)
 echo "Decoding coinbase transactions to get scriptsigs and addresses > data/txs_scriptsigs_addresses.txt"
-rm -f txs_scriptsigs_addresses.txt # delete existing file so that we don't accidentally append to it
+rm -f data/txs_scriptsigs_addresses.txt # delete existing file so that we don't accidentally append to it
 while read LINE; do bitcoin-cli decoderawtransaction "$LINE" | jq '"\(.vin[0].coinbase),\(.vout[0].scriptPubKey.addresses[0])"' | tr -d '"' >> data/txs_scriptsigs_addresses.txt; done < data/txs.txt
 
 # 4. Truncate the files so that they're both the same length as block.txt
@@ -43,7 +43,7 @@ sed -i '1s/^/height,time,bits,coinbase,address\n/' data/all.txt
 mv data/all.txt data/all.csv
 
 # 6. Cleanup temporary data files
-echo "Deleting temporary files: data/blocks.txt, data/txs.txt, data/txs_scriptsigs_addresses.txt"
-rm data/blocks.txt
-rm data/txs.txt
-rm data/txs_scriptsigs_addresses.txt
+#echo "Deleting temporary files: data/blocks.txt, data/txs.txt, data/txs_scriptsigs_addresses.txt"
+#rm data/blocks.txt
+#rm data/txs.txt
+#rm data/txs_scriptsigs_addresses.txt

@@ -4,7 +4,7 @@
         "address": ["1KFHE7w8BhaENAswwryaoccDb6qcT6DbYY"],
         "notes": "Another coinbase is 'fabe6d6d' in hex (🐟) and 'Mined by' in ascii, but I think the address covers these coinbase signatures."
     },
-    "Slush": {
+    "Slush": {1CK6KHY6MHgYvmRQ4PAafKYDrg1ejbH1cE
         "coinbase": ["slush"]
     },
     "AntPool": {

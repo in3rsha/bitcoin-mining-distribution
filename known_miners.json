@@ -4,19 +4,19 @@
         "address": ["1KFHE7w8BhaENAswwryaoccDb6qcT6DbYY"],
         "notes": "Another coinbase is 'fabe6d6d' in hex (🐟) and 'Mined by' in ascii, but I think the address covers these coinbase signatures."
     },
-    "Slush": {1CK6KHY6MHgYvmRQ4PAafKYDrg1ejbH1cE
+    "Slush": "{1CK6KHY6MHgYvmRQ4PAafKYDrg1ejbH1cE
         "coinbase": ["slush"]
-    },12dRugNcdxK39288NjcDV4GX7rMsKCGn6B
-    "AntPool": {
+    },
+    "AntPool": {"12dRugNcdxK39288NjcDV4GX7rMsKCGn6B
         "coinbase": ["AntPool"]
     },
-    "poolin.com": {1PdNVV71qNbHxchKiRrxqoR8JohpaLfoMX
+    "poolin.com":"{1PdNVV71qNbHxchKiRrxqoR8JohpaLfoMX
         "coinbase": ["poolin.com"]
     },
-    "BTC.COM": 15urYnyeJe3gwbGJ74wcX89Tz7ZtsFDVew
+    "BTC.COM":"15urYnyeJe3gwbGJ74wcX89Tz7ZtsFDVew
         "coinbase": ["BTC.COM"]
     },
-    "ViaBTC": {1BW18n7MfpU35q4MTBSk8pse3XzQF8XvzT
+    "ViaBTC": {"18cBEMRxXHqzWWCxZNtU91F5sbUNKhL5PX
         "coinbase": ["ViaBTC", "viabtc.com"]
     },
     "Bitfury": {
@@ -181,7 +181,7 @@
     "DPOOL.TOP": {
         "coinbase": ["DPOOL.TOP"]
     },
-    "58coin.com": {147SwRQdpCfj5p8PnfsXV2SsVVpVcz3aPq
+    "58coin.com":"{147SwRQdpCfj5p8PnfsXV2SsVVpVcz3aPq
         "coinbase": ["58coin.com"]
     },
     "Bitcoin-Russia": {
@@ -196,8 +196,8 @@
     "BITFARMS": {
         "coinbase": ["BITFARMS"]
     },
-    "SecretSuperstar":1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa
-        "coinbase": ["SecretSuperstar"]AnniMaster
+    "SecretSuperstar":"1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa
+        "coinbase": ["SecretSuperstar"]"AnniMaster
     },
     "Rawpool.com": {
         "coinbase": ["Rawpool.com"]

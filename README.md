@@ -113,7 +113,7 @@ Here are some more examples:
 416236 [...]Sun Chun Yu: Zhuang Yuan, will you marry me?[...]
 ```
 
-_**NOTE:** Sometimes you need to look at the **destination address** in the coinbase transaction to identify a miner. For example, GHash.IO used the address `1CjPR7Z5ZSyWk6WtXvSFgkptmpoi4UM9BC` to collect the block reward, but did not always put their name inside the coinbase._
+_**NOTE:** Sometimes you need to look at the **destination address** in the coinbase transaction to identify a miner. For example, GHash.IO used the address ` ` to collect the block reward, but did not always put their name inside the coinbase._
 
 ## Why are these charts interesting?
 
@@ -153,8 +153,7 @@ With this tool I'm just working with whatever data has been put in to the coinba
 
 ## Wasn't slushpool the first mining pool?
 
-Yes, but they [didn't mark their blocks at the start](https://twitter.com/slush/status/1159700373701050368).
-
+Yes, but they [didn't mark their blocks at the start]
 This tool only looks in the coinbase field to identify miners, which is why _Eligius_ shows up as the first mining pool instead.
 
 ## Links
@@ -168,12 +167,9 @@ I identified each miner's unique coinbase signatures by browsing through the coi
 
 If you're interested in checking out coinbase messages, I display them at the top of each block in my blockchain explorer:
 
-* [Genesis Block](https://learnmeabitcoin.com/explorer/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f)
+* [Genesis Block.blk/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f)
 
 Here's some further information on coinbase transactions and mining:
-
-* [learnmeabitcoin.com - Coinbase Transaction](https://learnmeabitcoin.com/guide/coinbase-transaction)
-* [learnmeabitcoin.com - Target](https://learnmeabitcoin.com/guide/target)
 
 And some other interesting links:
 

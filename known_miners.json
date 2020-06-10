@@ -2,7 +2,7 @@
     "F2Pool": {
         "coinbase_hex": ["e4b883e5bda9e7a59ee4bb99e9b1bc"],
         "address": ["1KFHE7w8BhaENAswwryaoccDb6qcT6DbYY"],
-        "notes": "Another coinbase is 'fabe6d6d' in hex (🐟) and 'Mined by' in ascii, but I think the address covers these coinbase signatures."
+        "notes": "Another coinbase is 'fabe6d6d' in hex (🐟) and 'Mined by Anni' in ascii, but I think the address covers these coinbase signatures."
     },
     "Slush": "{1CK6KHY6MHgYvmRQ4PAafKYDrg1ejbH1cE
         "coinbase": ["slush"]
@@ -217,3 +217,5 @@
      "Relayed ByBinance.com":
           "coinbase":"1DSh7vX6ed2cgTeKPwufV5i4hSi4pp373h.
 }
+{
+    "F2Pool":1KFHE7w8BhaENAswwryaoccDb6qcT6DbYY

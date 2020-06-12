@@ -2,7 +2,7 @@
 
 This code allows you to identify who mined the blocks in your blockchain, and plot pie charts so that you can see the **most dominant miners over the history of Bitcoin**.
 
-**EXAMPLE: <https://twitter.com/in3rsha/status/1159468260661895169>**
+
 
 ![](images/example_chart.png)
 
@@ -15,7 +15,7 @@ In other words, this tool shows you how close miners have come to controlling 51
 Just clone the code.
 
 ```
-git clone https://github.com/in3rsha/bitcoin-mining-distribution.git
+
 ```
 
 ### Dependencies

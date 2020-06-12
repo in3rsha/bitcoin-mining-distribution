@@ -219,7 +219,7 @@ with open('data/all.csv') as f:
                 miners[miner]["count_period"] = 0
 
 ###############
-# Final Results
+# Final Results.
 ###############
 
 # Sort multidimensional miners dictionary (by count_total)

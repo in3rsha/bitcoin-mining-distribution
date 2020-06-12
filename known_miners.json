@@ -2,7 +2,8 @@
     "F2Pool": {
         "coinbase_hex": ["e4b883e5bda9e7a59ee4bb99e9b1bc"],
         "address": ["1KFHE7w8BhaENAswwryaoccDb6qcT6DbYY"],
-        "notes": "Another coinbase is 'fabe6d6d' in hex (🐟) and 'Mined by Anni' in ascii, but I think the address covers these coinbase signatures."
+      "notes": "Another coinbase is 'fabe6d6d' in hex (🐟) and 'Mined by AnniMaster'
+    "notes": "Doesn't always put 'GHash' in the coinbase. Need address to identify most blocks."
     },
     "Slush": "{1CK6KHY6MHgYvmRQ4PAafKYDrg1ejbH1cE
         "coinbase": ["slush"]
@@ -13,33 +14,30 @@
     "poolin.com":"{1PdNVV71qNbHxchKiRrxqoR8JohpaLfoMX
         "coinbase": ["poolin.com"]
     },
-    "BTC.COM":"15urYnyeJe3gwbGJ74wcX89Tz7ZtsFDVew
+    "BTC.COM":"bc1qjl8uwezzlech723lpnyuza0h2cdkvxvh54v3dn"
         "coinbase": ["BTC.COM"]
      },
-        "3NA8hsjfdgVkmmVS9moHmkZsVCoLxUkvvv" : {
+        "3NA8hsjfdgVkmmVS9moHmkZsVCoLxUkvvv" 
             "name" : "BTC.com",
             "link" : "https://pool.btc.com"
-        },
-        "34qkc2iac6RsyxZVfyE2S5U5WcRsbg2dpK" : {
-            "name" : "BTC.com",
+       },
+        "34qkc2iac6RsyxZVfyE2S5U5WcRsbg2dpK" 
+           "name" : "BTC.com",
             "link" : "https://pool.btc.com"
-        },
-        "3EhLZarJUNSfV6TWMZY1Nh5mi3FMsdHa5U" : {
-            "name" : "BTC.com",
-            "link" : "https://pool.btc.com"
-        },
-        "bc1qjl8uwezzlech723lpnyuza0h2cdkvxvh54v3dn" : {
-            "name" : "BTC.com",
-            "link" : "https://pool.btc.com"
-        },
-    "ViaBTC": {"18cBEMRxXHqzWWCxZNtU91F5sbUNKhL5PX
-        "coinbase": ["ViaBTC", "viabtc.com"]
+       },
+        "3EhLZarJUNSfV6TWMZY1Nh5mi3FMsdHa5U" 
+           "name" : "BTC.com",
+            "link" : "https://pool.btc.com
+      },
+         "ViaBTC": {"18cBEMRxXHqzWWCxZNtU91F5sbUNKhL5PX"
+           "coinbase": ["ViaBTC", "viabtc.com"]
     },
-    "Bitfury": {"3KF9nXowQ4asSGxRRzeiTpDjMuwM2nypAN
-        "coinbase": ["Bitfury", "BitFury"]
+    "Bitfury": {"3KF9nXowQ4asSGxRRzeiTpDjMuwM2nypAN"
+        "coinbase": ["Bitfury",
     },
-    "BTC.TOP": {
+    "BTC.TOP": {"1Hz96kJKF2HLPGY15JWLB5m9qGNxvt8tHJ"
         "coinbase": ["BTC.TOP"]
+            "link" : "http://btc.top"
     },
     "Huobi":"{3HuobiNg2wHjdPU2mQczL9on8WF7hZmaGd
         "coinbase": ["HuoBi", "Huobi"]
@@ -50,8 +48,9 @@
     "Bixin": {
         "coinbase": ["Bixin"]
     },
-    "BitClub": {
+    "BitClub": {"155fzsEBHy9Ri2bMQ8uuuR3tv1YzcDywd4"
         "coinbase": ["BitClub", "BitClub Network"]
+            "link" : "https://bitclubpool.com/"
     },
     "Bitcoin.com": {
         "coinbase": ["pool.bitcoin.com"]
@@ -71,8 +70,7 @@
     "GHash.IO": {
         "coinbase": ["GHash.IO", "ghash.io"],
         "address": ["1CjPR7Z5ZSyWk6WtXvSFgkptmpoi4UM9BC"],
-        "notes": "Doesn't always put 'GHash' in the coinbase. Need address to identify most blocks."
-    },
+       
     "50BTC.com": {
         "coinbase": ["50BTC.com"]
     },
@@ -91,14 +89,16 @@
     "GBMiners": {
         "coinbase": ["mined by gbminers"]
     },
-    "1Hash": {"1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV
+    "1Hash": {"1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV"
         "coinbase": ["1hash.com"]
     },
-    "BW Pool": {
+    "BW Pool": {"1JLRXD8rjRgQtTS9MvfQALfHgGWau9L9ky"
         "coinbase": ["BW Pool", "BWPool"]
+            "link" : "https://bwpool.net/"
     },
-    "BTCC": {
-        "coinbase": ["BTCC"]
+    "BTCC": {"152f1muMCNa7goXYhYAQC61hxEgGacmncB
+          "coinbase": ["BTCC"]
+             "link" : "https://pool.btcc.com/"
     },
     "Go Green": {
         "coinbase": ["GBSB3P1"]
@@ -106,7 +106,7 @@
     "Batpool": {
         "coinbase": ["BATPOOL"]
     },
-    "EclipseMC": {
+    "EclipseMC": {"15xiShqUqerfjFdyfgBH1K7Gwp6cbYmsTW"
         "coinbase": ["EclipseMC", "EMC"]
     },
     "XBTC": {
@@ -121,10 +121,10 @@
     "ckpool": {
         "coinbase": ["ckpool"]
     },
-    "megabigpower.com": {
+    "megabigpower.com": {"1K7znxRfkS8R1hcmyMvHDum1hAQreS4VQ4"
         "coinbase": ["megabigpower.com"]
     },
-    "Polmine": {
+    "Polmine": {"1JrYhdhP2jCY6JwuVzdk9jUwc4pctcSes7"
         "coinbase": ["by polmine.pl"]
     },
     "BitcoinAffiliateNetwork": {
@@ -209,7 +209,7 @@
     "Sigmapool": {
         "coinbase": ["SigmaPool.com"]
     },
-    "BITFARMS": {
+    "BITFARMS": {"3GvEGtnvgeBJ3p3EpdZhvUkxY4pDARkbjd"
         "coinbase": ["BITFARMS"]
     },
     "SecretSuperstar":"1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa
@@ -221,22 +221,23 @@
     "poolserverj": {
         "coinbase": ["poolserverj"]
     },
-    "8baochi.com": {
+    "8baochi.com": {"1Hk9gD8xMo2XBUhE73y5zXEM8xqgffTB5f"
         "coinbase": ["8baochi.com"]
-    },
-    "Unknown": {
-        "notes": "Just a spare field, comes in handy in some scripts."
+          "link" : "http://8baochi.com/"       
+      },
+       "Unknown": {
+          "notes": "Just a spare field, comes in handy in some scripts."
         
-    }"Relayed ByLubian.com":
+        }"Relayed ByLubian.com":
           "coinbase":"34Jpa4Eu3ApoPVUKNTN2WeuXVVq1jzxgPi.
-    },
-     "Relayed ByBinance.com":
+      },
+        "Relayed ByBinance.com":
           "coinbase":"1DSh7vX6ed2cgTeKPwufV5i4hSi4pp373h.
-}
-{ "3Bmb9Jig8A5kHdDSxvDZ6eryj3AXd3swuJ": {
-            "name" : "NovaBlock",
+      }
+       {"3Bmb9Jig8A5kHdDSxvDZ6eryj3AXd3swuJ": {
+           "name" : "NovaBlock",
             "link" : "https://novablock.com"
-         },
+       },
         "3GvEGtnvgeBJ3p3EpdZhvUkxY4pDARkbjd" : {
             "name" : "Bitfarms",
             "link" : "https://www.bitfarms.io/"

@@ -15,7 +15,23 @@
     },
     "BTC.COM":"15urYnyeJe3gwbGJ74wcX89Tz7ZtsFDVew
         "coinbase": ["BTC.COM"]
-    },
+     },
+        "3NA8hsjfdgVkmmVS9moHmkZsVCoLxUkvvv" : {
+            "name" : "BTC.com",
+            "link" : "https://pool.btc.com"
+        },
+        "34qkc2iac6RsyxZVfyE2S5U5WcRsbg2dpK" : {
+            "name" : "BTC.com",
+            "link" : "https://pool.btc.com"
+        },
+        "3EhLZarJUNSfV6TWMZY1Nh5mi3FMsdHa5U" : {
+            "name" : "BTC.com",
+            "link" : "https://pool.btc.com"
+        },
+        "bc1qjl8uwezzlech723lpnyuza0h2cdkvxvh54v3dn" : {
+            "name" : "BTC.com",
+            "link" : "https://pool.btc.com"
+        },
     "ViaBTC": {"18cBEMRxXHqzWWCxZNtU91F5sbUNKhL5PX
         "coinbase": ["ViaBTC", "viabtc.com"]
     },
@@ -25,7 +41,7 @@
     "BTC.TOP": {
         "coinbase": ["BTC.TOP"]
     },
-    "Huobi": {
+    "Huobi":"{3HuobiNg2wHjdPU2mQczL9on8WF7hZmaGd
         "coinbase": ["HuoBi", "Huobi"]
     },
     "okpool": {
@@ -75,7 +91,7 @@
     "GBMiners": {
         "coinbase": ["mined by gbminers"]
     },
-    "1Hash": {
+    "1Hash": {"1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV
         "coinbase": ["1hash.com"]
     },
     "BW Pool": {
@@ -199,7 +215,7 @@
     "SecretSuperstar":"1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa
         "coinbase": ["SecretSuperstar"]"AnniMaster.:Satoshi Nakamoto.
     },
-    "Rawpool.com": {
+    "Rawpool.com": {"1FbBbv5oYqFKwiPm4CAqvAy8345n8AQ74b
         "coinbase": ["Rawpool.com"]
     },
     "poolserverj": {
@@ -218,4 +234,4 @@
           "coinbase":"1DSh7vX6ed2cgTeKPwufV5i4hSi4pp373h.
 }
 {
-    "F2Pool":1KFHE7w8BhaENAswwryaoccDb6qcT6DbYY
+    

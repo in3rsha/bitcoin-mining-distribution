@@ -31,4 +31,4 @@ gifsicle -b mining-distribution.gif -d10 "#0--2" -d200 "#-1"
 
 # remove temporary gif files from chart/ directory
 echo "Removing temporary .png.gif files from charts/ directory"
-rm charts/*.png.gif
+rm charts/*.png.gif.

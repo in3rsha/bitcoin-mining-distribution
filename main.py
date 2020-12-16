@@ -203,7 +203,7 @@ with open('data/all.csv') as f:
 
             # Save figure to file
             datestring = datetime.datetime.utcfromtimestamp(float(timestamp)).strftime('%Y_%m_%d') # %Y_%m_%d__%H_%M_%S
-            plt.savefig('charts/' + height + '__' + datestring + '.png')
+            plt.savefig('charts/' + height.zfill(8) + '__' + datestring + '.png')
             #plt.show()
 
             # Clear the figure so we can plot a new chart afresh next time

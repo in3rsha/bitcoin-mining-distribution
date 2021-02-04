@@ -45,8 +45,6 @@ rm -rf bitcoin-iterate/
 
 We then use a Python script to decode this data and create pie charts using Matplotlib. You probably have both of these installed already.
 
-**NOTE:** The Python script in this repo is **_not_ currently compatible with Python 3**.
-
 #### 4. Gifsicle
 
 Lastly we create a cool animated gif of these pie charts using [Gifsicle](https://www.lcdf.org/gifsicle/):
@@ -64,7 +62,7 @@ Make sure you have `bitcoind` running (so that `bitcoin-cli` is available), then
 bash bitcoin-iterate.sh
 
 # 2. Run the main script to identify who mined each block, and save the pie charts to the charts/ directory.
-python main.py
+./main.py
 
 # 3. Create a gif from the individual pie charts.
 bash gifsicle.sh

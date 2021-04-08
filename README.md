@@ -60,6 +60,9 @@ Make sure you have `bitcoind` running (so that `bitcoin-cli` is available), then
 ```
 # 1. Get the blockchain data we need, which will get stored in a data/ directory.
 bash bitcoin-iterate.sh
+# Or, if you want statistics on a merge-mined sidechain such as Namecoin
+# instead of Bitcoin, instead run:
+./auxpow-iterate.py
 
 # 2. Run the main script to identify who mined each block, and save the pie charts to the charts/ directory.
 ./main.py

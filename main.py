@@ -1,19 +1,14 @@
+#!/usr/bin/env python3
+
 import matplotlib.pyplot as plt      # Plotting charts
 import json                          # Decoding known_miners.json file
 import hashlib                       # Hash Functions (for creating colors)
 import datetime                      # Convert block Unix timestamp to a date
 import colorsys                      # Convert HSV colors to RGB colors
+import pathlib
 
-# Python 2.7: Make a directory to hold the "charts" (if it doesn't already exist)
-import errno
-import os
-try:
-    os.makedirs("charts")
-except OSError as exc:  # Python >2.5
-    if exc.errno == errno.EEXIST and os.path.isdir("charts"):
-        pass
-    else:
-        raise
+# Make a directory to hold the "charts" (if it doesn't already exist)
+pathlib.Path("./charts").mkdir(parents=True, exist_ok=True)
 
 # Open file of known miner coinbase signatures and addresses
 with open('known_miners.json') as file_object:
@@ -42,20 +37,20 @@ def identify(miners, ascii, scriptsig, address): # Takes miners dict, along with
         if "coinbase" in miners[miner]:
             miner_signature = miners[miner]["coinbase"] # array of possible signatures that each miner puts in the coinbase
             # See if the miner's signature is in the ascii format of the coinbase
-            if any(x.encode("ascii") in ascii for x in miner_signature): # The strings read from the json file get read as unicode, so need to convert them to ascii strings
+            if any(x in ascii for x in miner_signature):
                 return miner
 
         # 2. Check the hex coinbase signature to try and match a miner (if there is one)
         if "coinbase_hex" in miners[miner]:
             miner_signature_hex = miners[miner]["coinbase_hex"] # array of possible signatures that each miner puts in the coinbase
             # See if the miner's signature is in the ascii format of the coinbase
-            if any(x.encode("ascii") in scriptsig for x in miner_signature_hex):
+            if any(x in scriptsig for x in miner_signature_hex):
                 return miner
 
         # 3. Check for the destination address of each miner (if there is one)
         if "address" in miners[miner]:
             miner_address = miners[miner]["address"]
-            if any(x.encode("ascii") in address for x in miner_address):
+            if any(x in address for x in miner_address):
                 return miner
 
     # 4. Return Unknown if not found
@@ -82,14 +77,14 @@ with open('data/all.csv') as f:
         bits = fields[2]
         scriptsig = fields[3]
         address = fields[4]
-        ascii = scriptsig.decode("hex") # [!] Does not work for Python 3
+        ascii = bytes.fromhex(scriptsig).decode("latin_1")
 
         # Set a variable to update if we have found a miner (used for counting Unknown miners)
         found = False
 
         # Identify the miner
         name = identify(miners, ascii, scriptsig, address)
-        #print height, name, ascii # Check out the miners as we go to see if we've missed any
+        #print(height, name, ascii) # Check out the miners as we go to see if we've missed any
 
         # Add to counters
         miners[name]["count_period"] += 1 # If we've found a match, add to the counter for that miner
@@ -98,7 +93,7 @@ with open('data/all.csv') as f:
         # Set color and order for the miner if it has just appeared
         if miners[name]["count_total"] == 1:
             # Set color
-            color = "#" + hashlib.sha256(name).hexdigest()[-7:-1] # set random color based on hash of color name
+            color = "#" + hashlib.sha256(name.encode("utf-8")).hexdigest()[-7:-1] # set random color based on hash of color name
             # color = colorsys.hsv_to_rgb(hue, 0.8, 0.8) # set color moving across the hue spectrum
             hue += spacing  # update the hue for the next miner
             miners[name]["color"] = color
@@ -113,8 +108,7 @@ with open('data/all.csv') as f:
         if int(height) > 0 and int(height) % 2016 == 0:
 
             # Sort multidimensional miners dictionary (by order, to keep each miner in the same position on the pie chart)
-            sorted_by_appearance = miners.items()
-            sorted_by_appearance.sort(key=lambda x: x[1]['order'])
+            sorted_by_appearance = sorted(miners.items(), key=lambda x: x[1]['order'])
 
             # Create a list of labels and a list of values (for use in plotting the chart)
             labels = list()
@@ -154,8 +148,7 @@ with open('data/all.csv') as f:
             ########
 
             # Sort multidimensional miners dictionary (by count_period, the number of block mined during this period)
-            sorted_by_count = miners.items()
-            sorted_by_count.sort(key=lambda x: x[1]['count_period'], reverse=True)
+            sorted_by_count = sorted(miners.items(), key=lambda x: x[1]['count_period'], reverse=True)
 
             # Create a dict to hold the position of each miner based on number of blocks mined
             positions = dict()
@@ -211,8 +204,8 @@ with open('data/all.csv') as f:
             plt.close(fig) # close (memory leak otherwise!)
 
             # Show results in terminal
-            print height
-            print percentages
+            print(height)
+            print(percentages)
 
             # Reset the counts so we can create a fresh chart for the next target period
             for miner in miners:
@@ -223,9 +216,8 @@ with open('data/all.csv') as f:
 ###############
 
 # Sort multidimensional miners dictionary (by count_total)
-sorted_by_total_count = miners.items()
-sorted_by_total_count.sort(key=lambda x: x[1]['count_total'], reverse=True)
+sorted_by_total_count = sorted(miners.items(), key=lambda x: x[1]['count_total'], reverse=True)
 
-print
+print("")
 for item in sorted_by_total_count:
-    print item[0], item[1]['count_total']
+    print(item[0], item[1]['count_total'])
